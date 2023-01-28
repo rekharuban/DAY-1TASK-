@@ -1,0 +1,63 @@
+DAY 1 CLASS TASK ;
+
+DIFFERENCE BETWEEN HTTP1.1 VS HTTP2
+
+HTTP stands for hypertext transfer protocol & it is used in client-server communication. By using HTTP user sends the request to the server & the server sends the response to the user. There are several stages of development of HTTP but we will focus mainly on HTTP/1.1.
+•	HTTP/1.1: For better understanding, let’s assume the situation when you make a request to the server for the geeksforgeeks.html page & server responds to you as a resource geeksforgeeks.html page. 
+•	Before sending the request and the response there is a TCP connection established between client & server. 
+•	 The connection was not lost here after the first request because we add a keep-alive header which is the part of the request so there is an open connection between the server & client.  There is a persistent connection which means several requests & responses are merged in a single connection.
+
+
+
+•	HTTP/2: HTTP/2 was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format. it works on fully multiplexed that is one TCP connection is used for multiple requests.
+•	HTTP/2 uses HPACK which is used to split data from header. it compresses the header. The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT 
+
+
+In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a colour, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+THERE ARE 2 TYPES OF Objects in JavaScript:
+1.	By object literal
+2.	By creating instance of Object directly (using new keyword)
+
+1.	BY OBJECT LITERAL
+The syntax of creating object using object literal is given below and Property and value is separated by colon.
+
+EXAMPLE : 
+                      NAME:”JOHN”
+                       AGE    : 20
+                       YEAR :2000
+
+2.	BY CREATING INSTANCE OF OBJECT DIRECTLY (USING NEW KEYWORD)
+The syntax of creating object directly is given below and Here, new keyword is used to create object.
+
+EXAMPLE: 
+                  Var student = Object(“JOHN”)
+                  Student.id= 101;
+                  Student.name= “JOHN”
+                  Student.fees= 10000;
+                    Accessing JavaScript Objects:
+The syntax for accessing the property of an object is:
+objectName.property
+or
+objectName[“property”]
+Accessing ‘fname’ from example 1 using dot operator,
+                        
+               Person.fname
+Accessing ‘name’ form example 2 using [],
+
+Student[“name”]
